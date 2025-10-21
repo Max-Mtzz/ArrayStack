@@ -79,7 +79,7 @@ public class ArrayStack<T> implements MyStack<T> {
             return;
         }
         //Con un for recorre cada elemento y lo imprime
-        for (int i = 0; i < top; i++) {
+        for (int i = top; i >=0; i--) {
             System.out.println(data[i]);
         }
     }
