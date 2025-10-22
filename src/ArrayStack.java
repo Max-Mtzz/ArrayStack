@@ -58,8 +58,13 @@ public class ArrayStack<T> implements MyStack<T> {
 
     @Override
     public void clear() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'clear'");
+        // Recorremos el arreglo y lo llenamos con null
+        for (int i = 0; i < top; i++) {
+        data[i] = null;
+        }
+        // Reiniciamos el tope
+        top = 0;
+        System.out.println("EL stack se ha vaciado");
     }
 
     //Método para saber cuando esta lleno el arreglo y agregarle mas capacidad

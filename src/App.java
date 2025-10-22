@@ -10,5 +10,8 @@ public class App {
         myStack.pop();
         System.out.println("-------------------------------");
         myStack.printStack();
+        System.out.println("-------------------------------");
+        myStack.clear();
+        myStack.printStack();
     }
 }
